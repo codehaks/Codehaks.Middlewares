@@ -1,6 +1,7 @@
 ﻿using Codehaks.Middlewares.SendFile;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 
 namespace SendFileMiddleware.Web
 {
@@ -13,7 +14,12 @@ namespace SendFileMiddleware.Web
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseSendFile(@"file");   // "C:\myfile.jpg
+            app.UseSendFile(@"filePath");   // "C:\myfile.jpg
+
+            app.Run(async (context) =>
+            {
+                await context.Response.WriteAsync("Hello world");
+            });
         }
     }
 }

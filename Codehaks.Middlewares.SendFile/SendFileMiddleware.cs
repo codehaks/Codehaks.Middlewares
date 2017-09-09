@@ -22,9 +22,13 @@ namespace Codehaks.Middlewares.SendFile
                 var file = new Microsoft.Extensions.FileProviders.Physical.PhysicalFileInfo(
                     new System.IO.FileInfo(_options.FilePath));
                 context.Response.SendFileAsync(file);
-            }
 
-            return this._next(context);
+                return Task.CompletedTask;
+            }
+            else
+            {
+                return Task.CompletedTask;
+            }
         }
     }
 }
