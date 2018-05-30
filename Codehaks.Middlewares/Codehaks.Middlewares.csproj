@@ -6,9 +6,12 @@
     <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
     <Copyright>Codehaks</Copyright>
     <PackageProjectUrl>https://github.com/codehaks/Codehaks.Middlewares</PackageProjectUrl>
-    <PackageIconUrl>codehaks.github.io/img/favicon-96x96.png</PackageIconUrl>
+    <PackageIconUrl>http://codehaks.github.io/img/favicon-96x96.png</PackageIconUrl>
     <RepositoryUrl>https://github.com/codehaks/Codehaks.Middlewares</RepositoryUrl>
     <PackageTags>ASP.NET Core, Middlewares, StaticFiles</PackageTags>
+    <Authors>Hakim Ghods</Authors>
+    <Company>Codehaks</Company>
+    <PackageReleaseNotes>StaticFiles Extention</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
